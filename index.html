@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Форма заявки</title>
+	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+<body>
+<header>
+    <div class="container">
+      <div class="wrap_hed">
+        <div class="phone"><span>Телефон: (3812) 67-04-92</span></div>    
+        <div class="mail"><span>Email: info@ompec.ru</span></div>
+      </div>        
+    </div>
+</header>
+<section class="form_zayvka">
+  <div class="container">
+    <form action="mail.php" id="contactform" name="contact" method="POST" enctype="multipart/form-data">
+    <h1 class="zag">Заявка на обучение</h1>
+      <div class="wrap_zayvka">
+        <div class="left">
+                <div class="row">
+                <label for="name">Имя</label>
+                <input type="text" name="user_name" id="name" class="txt" tabindex="1" placeholder="Введите имя" required>
+                </div>
+                <div class="row">
+                <label for="surname">Фамилия</label>
+                <input type="text" name="surname" id="surname" class="txt" tabindex="2" placeholder="Введите фамилию" required>
+                </div>    
+                <div class="row">
+                <label for="patronymic">Отчество</span></label>
+                <input type="text" name="patronymic" id="patronymic" class="txt" tabindex="3" placeholder="Введите отчество" required>
+                </div>
+                <div class="row">
+                <label for="pol">Пол</label>
+                <select class="txt" name="pol"  tabindex="4">
+                            <option value="Мужской">Мужской</option>
+                            <option value="Женский">Женский</option>
+                </select>
+                </div>
+                <div class="row">
+                <label for="form_of_study">Форма обучения</label>
+                <select class="txt" name="form_of_study"  tabindex="4">
+                            <option value="Очная">Очная</option>
+                            <option value="Заочная">Заочная</option>
+                </select>               
+                </div>                
+                <div class="row">
+                <label for="Date_of_Birth">Дата рождения</label>
+                <input type="date" name="Date_of_Birth" id="Date_of_Birth" class="txt" tabindex="5" placeholder="" required>
+                </div>                
+                <div class="row">
+                <label for="email">E-mail Адрес</label>
+                <input type="email" name="user_email" id="email" class="txt" tabindex="5" placeholder=" address@mail.ru" required>
+                </div>
+                 <div class="row">
+                <label for="propiska">Место жительства по прописки</label>
+                <input type="text" name="propiska" id="propiska" class="txt" tabindex="6" placeholder="Прописка" required>
+                </div> 
+        </div>
+        <div class="right">               
+                <div class="row">
+                <label for="location">Фактическое место жительства</label>
+                <input type="text" name="location" id="location" class="txt" tabindex="6" placeholder="Место жительства" required>
+                </div>
+                <div class="row">
+                <label for="phone">Контактный телефон</label>
+                <input type="tel" name="user_phone" id="phone" class="txt" tabindex="6" placeholder="+7(XXX)XXX-XX-XX"  required>
+                </div>                
+                <div class="row">
+                <label for="file">Прикрепите сканер паспорта и аттестата</label>
+                <input type="file" name="upload" id="file" class="txt" tabindex="7"  required>
+                </div>       
+                <div class="row">
+                <label for="baza"> База классов </label>
+                <select name="baza" id="baza" class="txt"  tabindex="8">
+                            <option class="nine" id="nine" value="9 классов">9 классов</option>
+                            <option class="eleven" id="eleven" value="11 классо">11 классов</option>
+                </select>              
+                </div>
+                <div class="cnt">
+                      <p class="spec"><span class="btn">Выберите специальность</span> <a href="#" class="remove">Сброс</a></p>
+                      <textarea name="specialnost" id="special"></textarea> 
+                      <div id="listing" class="hide"> 
+                        <span class="link" id="fornine">ДОКУМЕНТАЦИОННОЕ ОБЕСПЕЧЕНИЕ УПРАВЛЕНИЯ И АРХИВОВЕДЕНИЕ</span> 
+                        <span class="link" id="fornine">БАНКОВСКОЕ ДЕЛО 2</span> 
+                        <span class="link" id="fornine">ЭКОНОМИКА И БУХГАЛТЕРСКИЙ УЧЕТ</span> 
+                        <span class="link" id="fornine">ПРИКЛАДНАЯ ИНФОРМАТИКА</span> 
+                        <span class="link" id="fornine">ЭЛЕКТРОМОНТЕР ПО РЕМОНТУ И ОБСЛУЖИВАНИЮ ЭЛЕКТРООБОРУДОВАНИЯ</span> 
+                        <span class="link" id="fornine">СЛЕСАРЬ ПО КОНТРОЛЬНО-ИЗМЕРИТЕЛЬНЫМ ПРИБОРАМ И АВТОМАТИКЕ</span> 
+                        <span class="link" id="fornine">ТЕПЛОСНАБЖЕНИЕ И ТЕПЛОТЕХНИЧЕСКОЕ ОБОРУДОВАНИЕ</span> 
+                        <span class="link" id="fornine">МАСТЕР ПО РЕМОНТУ И ОБСЛУЖИВАНИЮ ИНЖЕНЕРНЫХ СИСТЕМ ЖИЛИЩНО-КОММУНАЛЬНОГО ХОЗЯЙСТВА</span> 
+                        <span class="link" id="fornine">ТЕХНОЛОГИЯ АНАЛИТИЧЕСКОГО КОНТРОЛЯ ХИМИЧЕСКИХ СОЕДИНЕНИЙ</span> 
+
+                        <span class="link" id="foreleven">ПРАВО И СУДЕБНОЕ АДМИНИСТРИРОВАНИЕ</span> 
+                        <span class="link" id="foreleven">ПРАВООХРАНИТЕЛЬНАЯ ДЕЯТЕЛЬНОСТЬ</span> 
+                        <span class="link" id="foreleven">ТОКАРЬ-УНИВЕРСАЛ</span> 
+                        <span class="link" id="foreleven">ОПЕРАТОР НЕФТЕПЕРЕРАБОТКИ</span>
+                        <span class="link" id="foreleven">ЛАБОРАНТ-ЭКОЛОГ</span> 
+                        <span class="link" id="foreleven">СЛЕСАРЬ ПО КОНТРОЛЬНО-ИЗМЕРИТЕЛЬНЫМ ПРИБОРАМ И АВТОМАТИКЕ</span> 
+                        <span class="link" id="foreleven">СВАРЩИК (РУЧНОЙ И ЧАСТИЧНО МЕХАНИЗИРОВАННОЙ СВАРКИ (НАПЛАВКИ))</span> 
+                        <span class="link" id="foreleven">ЭЛЕКТРОМОНТЕР ПО РЕМОНТУ И ОБСЛУЖИВАНИЮ ЭЛЕКТРООБОРУДОВАНИЯ (ПО ОТРАСЛЯМ)</span>
+                        <span class="link" id="foreleven">ПРОГРАММИРОВАНИЕ В КОМПЬЮТЕРНЫХ СИСТЕМАХ</span> 
+                        <span class="link" id="foreleven">ТЕПЛОВЫЕ ЭЛЕКТРИЧЕСКИЕ СТАНЦИИ</span> 
+                      </div> 
+                </div>
+        </div> <!-- закрыт правый блок -->
+        <div class="button">
+          <input type="submit" class="button" value="Отправить заявку">
+        </div>
+      </div>   <!-- закрыта обертка -->
+    </form>
+    </div>
+  </div>
+</section>
+
+    <script src="js/js.js"></script>
+    <script src="js/jquery.maskedinput.min.js"> </script>
+</body>
+</html>

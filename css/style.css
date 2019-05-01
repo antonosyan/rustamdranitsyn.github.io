@@ -1,0 +1,145 @@
+html,body{padding:0;margin:0; font-family: 'Arial';}
+.container {
+  max-width: 1190px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+header {
+  background: #323263;
+  padding: 5px 0;
+}
+.row label {
+  width: 300px;
+}
+.wrap_hed {
+  display: flex;
+  justify-content: space-between;
+}
+.wrap_hed span {
+  font: 18px/38px "open sans",Helvetica, Arial, sans-serif;
+  color: #fff;
+}
+.wrap_zayvka {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.zag {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 28px;
+  color: #555;
+}
+.left {
+  width: 49%;
+}
+.right {
+  width: 49%;
+}
+form .row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 7px;
+    padding: 7px 8px;
+}
+form .txt {
+    display: inline-block;
+    width: 240px;
+    font-family: Oxygen, sans-serif;
+    font-size: 1.35em;
+    font-weight: normal;
+    color: rgb(137, 137, 137);
+    padding: 8px 5px;
+    border-radius: 5px;
+    width: 300px;
+    box-sizing: border-box;
+}
+form label {
+    display: inline-block;
+    font-size: 1.2em;
+    font-weight: bold;
+    width: 120px;
+    color: rgb(70, 70, 70);
+    vertical-align: top;
+    padding: 6px 0px;
+}
+
+.cnt{
+position:relative;
+}
+
+div#listing{ 
+width: 100%; 
+height: 200px; 
+overflow: auto; 
+border:1px solid #ddd; 
+margin-bottom: 20px; 
+position:absolute;
+top:40px;
+left:0;
+background:#fff;
+} 
+
+div#listing.hide{
+display:none;
+}
+div#listing.visible{
+display:block;
+}
+
+div#listing span{ 
+display: block; 
+cursor:pointer;
+border-bottom: 1px solid #C7C7C7;
+} 
+div#listing span:hover{ 
+background: #eee;
+border-bottom: 1px solid #ADADAD;
+} 
+div#listing span.active{ 
+font-weight:600; 
+color:green; 
+}
+.btn{
+  outline:none;
+  color:green;
+  border-bottom:1px dashed green;
+  cursor:pointer;
+}
+#special{
+border:none;
+outline: none;
+width: 100%;
+font-size: 16px;
+height:400px;
+overflow:hidden;
+position:absolute;
+}
+.del{
+  display:none!important;
+}
+.remove {
+  text-decoration: none;
+  font-family: arial;
+  font-size: 18px;
+  color: black;  
+}
+.button {
+  position: relative;
+  top: 30px;
+  margin: 0 auto; 
+  z-index: 999;
+}
+.button input {
+  border: none;
+  background: #727CB6;
+  padding: 15px 25px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+}
+.button input:hover {
+  transition: 0.3s;
+  color: #C2C2C2;
+}

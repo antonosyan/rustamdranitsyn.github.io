@@ -1,0 +1,95 @@
+@media only screen and (max-width: 420px) {
+	.wrap_zayvka {
+ 		display: flex;
+ 		flex-direction: column;
+ 		justify-content: space-between;
+ 		align-items: center;
+ 	}
+ 	.button {
+ 		position: relative;
+  		top: 110px;
+  		margin: 0 auto; 
+  		z-index: 999;
+ 	}
+ 	.container {
+ 		width: 90%;
+ 	}
+ 	.left {
+ 		width: 100%;
+ 	}
+ 	.right {
+ 		width: 100%;
+ 	}
+  .wrap_hed span {
+    font-size: 12px;
+  }
+  .zag {
+    font-size: 18px;
+  }
+  .wrap_zayvka {
+    margin-top: 25px;
+  }
+  form .txt {
+    width: 140px;
+    font-size: 0.9em;
+    font-weight: normal;
+    color: rgb(137, 137, 137);
+    padding: 5px 5px;
+    box-sizing: border-box;
+  }
+  form label {
+    font-size: 0.9em;
+    font-weight: bold;
+    width: 120px;
+    color: rgb(70, 70, 70);
+    vertical-align: top;
+    padding: 6px 0px;
+}
+}
+
+@media only screen and (min-width: 419px) and (max-width: 767px) {
+	.wrap_zayvka {
+ 		display: flex;
+ 		flex-direction: column;
+ 		justify-content: space-between;
+ 		align-items: center;
+ 	}
+ 	.button {
+ 		position: relative;
+  		top: 110px;
+  		margin: 0 auto; 
+  		z-index: 999;
+ 	}
+ 	.container {
+ 		width: 95%;
+ 	}
+ 	.left {
+ 		width: 100%;
+ 	}
+ 	.right {
+ 		width: 100%;
+ 	}
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+ 	.wrap_zayvka {
+ 		display: flex;
+ 		flex-direction: column;
+ 		justify-content: space-between;
+ 		align-items: center;
+ 	}
+ 	.button {
+ 		position: relative;
+  		top: 110px;
+  		margin: 0 auto; 
+  		z-index: 999;
+ 	}
+ 	.container {
+ 		width: 90%;
+ 	}
+ 	.left {
+ 		width: 80%;
+ 	}
+ 	.right {
+ 		width: 80%;
+ 	}
+}
